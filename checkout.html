@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Confirm the total payment of selected product"
+    />
+    <title>Rainy Days | Checkout page</title>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/4ac4f05110.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3145309, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div>
+        <a href="index.html"
+          ><img
+          class="logo-header"
+          src="images/RainyDays_Logo.png"
+          alt="Rainy Days"
+        /></a>
+      </div>
+    </header>
+
+    <div class="navigationbar">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <main>
+      <h1 class="mainheader">Scott Shell</h1>
+      <div class ="checkout_information_all"> 
+      
+        <div>
+          <div class="container">
+            <img
+              class="productspecificimg"
+              src="/assets/RainyDays_Jacket2.png"
+              alt="Scott Shell Woman, a black watterrepellent and breathable soft shell jacket from Scott"
+            />
+
+            <div class="size_container">
+              <div class="btn">
+                <p class="product_specific_frame">
+                  Size:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="checkout_container">
+        <section>
+          <div class="checkout_product_text">
+            <div>
+              <h2>Scott Shell</h2>
+            </div>
+            <div>
+              <h2>$39</h2>
+            </div>
+          </div>
+
+          <div class="checkout_product_text">
+            <div>
+              <h2>Shipping</h2>
+            </div>
+
+            <div>
+              <h2>$9</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="customer_info_form">
+          <hr />
+          <!--https://stackoverflow.com/questions/14821087/horizontal-line-and-right-way-to-code-it-in-html-css-->
+          <div class="checkout_frame_total">
+            <div class="checkout_product_text"> 
+            <h2>Total</h2>
+            </div>
+        
+              <div class="checkout_product_text"> 
+            <h2>$48</h2>
+            </div>
+        
+          </div>
+
+          <div class="form_container"> 
+            <form action="submit.php" method="POST">
+              <div> <p>Email 
+                <input type="email" name="text" placeholder="Johndoe@example.com"/> </p>
+              </div>
+
+              <div> <p> Card information
+                <input type="text" name="card-info" placeholder="xxxx xxxx xxxx xxxx" /> </p>
+              </div>
+
+              <div class="form_details_extra"> 
+             <div> <p class="form_box_1"> MM/YY
+        
+                <input type="text" name="mm/yy" placeholder="03/23" /> </p>
+                </div>
+         
+                <div > <p class="form_box_2" > CVC
+                <input type="text" name="cvc" placeholder="345" /> </p>
+                </div>
+             </div>
+            </form>
+          </div>
+
+          <div class="btn">
+            <div>
+              <a href="products.html" class="cta">Back</a>
+            </div>
+
+            <div>
+              <a href="confirmation.html" class="cta">Purchase</a>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-styles">
+        <div>
+          <p><span>Do you need help?</span></p>
+          <a href="contact.html"><p class="text">Contact us</p></a>
+        </div>
+        <div class="address">
+          <p>Rainy Days Company</p>
+          <p class="address2">11 West 46th Street New York City</p>
+
+          <div>NY 10036</div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="logo-footer"
+          src="images/RainyDays_Logo.png"
+          alt="Rainy Days"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,811 @@
+/* GLOBAL STYLES */
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Baskerville Bold";
+    src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Baskerville Regular";
+    src: url("../fonts/LibreBaskerville-Regular.ttf") format("truetype");
+}
+
+:root {
+    font-family: "Baskerville Regular";
+    font-size: large;
+}
+    
+.navigationbar p a:hover,
+.navigationbar a:hover
+ {
+    color: #F05600;
+    border-radius: 5px;
+}
+
+
+
+body {
+    margin: 0px;
+    background-color: #FFF;
+}
+
+.site-header, footer {
+    background-color: #E3E3E3;
+}
+
+.site-header {
+    height: 190px;
+  }
+
+.site-header section,
+.confirmation_information,
+.button-boxes {
+    display: flex;
+}
+
+nav p  {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    flex-direction: column;
+    padding-left: 80%;
+}
+
+.logo-header {
+    width: 160px;
+    margin: 50px 35px;
+}
+
+.icons img {
+    padding: 6px;
+    margin: 5px;
+}
+
+
+.line {
+    border-top: 18px solid #000;
+    display: block;
+}
+
+.mainheader {
+    padding: 20px 0px 5px 100px;
+    margin: 0.5px 0px;
+    color: #FFF;
+    background-color: black;
+}
+
+h2 {
+    /* margin-left: 50px; pga endring i avstnd på pris i productspecificpage */
+    /* margin-top: 40px; pga endring i producttext på checkoutpage */
+}
+
+.navigationbar {
+    margin-bottom: 1px;
+    background-color: #000;
+}
+
+.navigationbar p {
+    margin: 0px 5px;
+    display: inline-block;
+}
+
+nav {
+    margin: 1px 250px;
+    padding: 10px;
+}
+ 
+nav .active { 
+    margin: 0px 10px;
+}
+
+
+.frame {
+    background-color: #FFF;
+    margin: auto;
+    padding: 15px 30px;
+               /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+    /* box-shadow: 0px 1px 4px  #C5C5C5;   */
+    border-radius: 20px;
+}
+
+.frame:hover {
+    box-shadow: 10px 10px 5px  #EAEAEA;
+
+}
+
+
+.product_container > .frame img {
+    margin: auto;
+}
+
+.frame img,
+.frame {    
+    height: 300px;
+    margin-bottom: 55px; /* må være slik for at bildene på alle sider skal holde seg like.. tror det messer med media queries på check out.. */
+    /* width: fit-content; */
+}
+
+.infotext {
+    color: #0A3641;
+    font-size: 20px;
+    text-align: center;
+}
+
+.product_specific_info,
+.checkout_information_all,
+.confirmation_information {
+    display: flex;
+    margin-left: 55px;
+}
+
+.productinfo {
+    margin-top: 180px;
+}
+
+.producttext,
+.checkout_frame_total {
+   justify-content: space-between;
+}
+
+.checkout_product_text {
+    margin:50px;
+}
+
+.checkout_price {
+    margin-left: 240px;
+}
+
+.checkout_price2 {
+    margin-left: 260px;
+}
+
+.producttext {
+    padding: 200px 115px;
+}
+
+.producttext p {
+    margin: 50px 0px 300px;
+}
+
+
+.sizeboxes {
+    outline: 5px solid;
+    outline-width: thin;
+    color: #000;
+}
+
+.sizeboxes_selected {
+    outline: 5px solid;
+    outline-width: thin;
+    color: #000;
+
+}
+
+.sizebox_selected {
+    background-color: rgba(240, 86, 0, .4);
+    outline: 5px solid;
+    outline-width: thin;
+    color: #000;
+}
+
+
+.sizeboxes:hover {
+    background-color: rgba(240, 86, 0, .4);
+}
+
+.sizeboxes:active {
+    background-color: rgba(240, 86, 0, .4); /* https://blog.hubspot.com/website/opacity-css & https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
+}
+
+.logo-footer {
+    width: 10%;
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+.text {
+    color: #000;
+    font-size: 10px;
+}
+
+.btn {
+    text-align: center; /*istedenfor display:flex*/
+    justify-content: center;
+    display: flex;
+}
+
+
+
+h2,
+h1,
+.frame, 
+.cta, 
+.cta_large, 
+.producttext2, 
+.ain3 p, 
+.ctatyle p, 
+.homepagetext,
+.contact_info  {
+font-family: "Baskerville Bold";
+}
+
+.cta, .cta_large {
+    background-color: #000;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 55px;
+    border-radius: 10px;
+  
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta_large {
+    margin-left: 6px;
+    height: 22.5px;
+}
+
+.cta:hover,
+.cta_large:hover {
+color: #F05600;
+}
+
+.footertext {
+    margin-left: 80%;
+    font-size: 10px;
+}
+
+.footer-styles {
+    padding-top: 30px;
+    margin-left: 55px;
+    margin-right: 55px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.footer-styles span {
+    font-weight: bold;
+}
+
+.footer-styles .text {
+    font-size: 15px;
+}
+
+ul {
+    font-size:x-large
+}
+
+li a {
+    color: #000;
+}
+
+.hamburgeritems {
+    display: flex;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+@media (max-width:850px) {
+    
+    .navigationbar nav {
+        background-color: #000;
+        margin:auto;
+        text-align: center;
+        width:150px;
+    }
+    .contact_form_container {
+        flex-direction: column;
+    }
+   section .frame {
+    margin-top: 0px;
+    margin: 20px;
+   }
+   .navigationbar {
+    position: sticky;
+    top: 0;
+     }   
+
+   
+ }
+
+/* Home Page */
+
+.logo_frontpage {
+    margin-left: 10px;
+}
+.homepage_container {
+    /* padding: 50px 50px 0px; */
+    padding: 50px 90px 20px;
+}
+
+.product_img_container {
+    margin: 20px 0px;
+    justify-content: center;
+}
+
+.homepagetext {
+    color: #000;
+    font-size: xx-large;
+}
+
+.featured_products {
+    display: flex;
+} 
+
+.active2, .tagline h1, .producttext2, nav .active {
+    color: #F05600;
+}
+
+.welcome {
+    background-image: url("/photos/nathan-dumlao-mountains-shadow.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 345px;
+    position: relative;
+    /* box-shadow: 0px 2px 5px #C5C5C5; */
+    box-shadow: 0px 1px 0px #000;
+}
+
+h1 {
+    color: #FFF;
+}
+
+.tagline {
+ padding: 135px 30px 135px 30px;
+ margin-bottom: 20px;
+}
+
+.tagline h1 {
+    margin: auto;
+    font-size: 7.9vw; /* https://stackoverflow.com/questions/15649244/responsive-font-size-in-css */
+    font-weight: 50;
+    text-align: center;
+    font-family: "Bebas Neue"; 
+    text-shadow: #000 5px 0 1px;
+}
+
+.view-button a {
+    text-decoration: none;
+    margin-top: 1px;
+    margin-right: 55px;
+    color: #000;
+    float: right;
+    padding:15px;
+   
+}
+
+.view-button a:hover {
+    outline: 0.5px solid #E3E3E3; /* https://www.w3schools.com/css/css_outline.asp */
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px  #EAEAEA;
+}
+
+hr {
+    border: 10;
+    border-top: 10px solid #000;
+}
+
+.infotext { 
+    padding: 70px; 
+    margin: 20px;
+}
+
+@media (max-width:515px) {
+    .infotext {
+        padding: 20px;
+        margin-top: 70px;
+    }
+
+    .homepage_container {
+        padding: 50px 20px 0px;
+    }
+
+}
+
+@media (max-width:1267px) {
+    .jackets_section {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:750px) {
+    
+    .product_img_container {
+        display: flex;
+    }
+}
+
+
+/** Products page **/
+
+/** .alljackets {
+  display: flex; 
+} **/
+
+.product_container_all > div {
+    display: flex;
+}
+
+.product_container_all {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-shadow: #989898;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    
+}
+.contentmod { 
+width: 33.33%;
+height: 100px;
+box-shadow: 4px 4px 5px 2px gray;
+margin: 0px 10px;
+}
+
+.jackets_section * > {
+    flex-direction: column;
+}
+
+.container_btn {
+    display: flex;
+  justify-content: center;
+}
+
+.product_container {
+    /* align-items: end; */
+    display: flex; 
+    flex-direction: column;
+    /* justify-content: center; */
+    /* /* margin-bottom: 40px;
+    justify-content: space-between; 
+}
+
+.product_container2 {
+    align-items: end;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.product_container_all {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+
+.products p {
+    display: ruby; /** CHANGE? **/
+    margin-left: 20px;
+}
+
+.product_price {
+    margin: 75px;
+    font-weight: bold;
+}
+
+
+
+/** Product specific-page **/
+
+@media (min-width: 600px) {
+  .product_specific_frame img {
+    display:flex;
+  }
+ }
+    
+.product_specific_frame { 
+    font-family: "Baskerville Bold";
+    outline: 1.5px solid #000;
+    padding: 10px;
+    margin: 30px;
+}
+
+.product_specific_frame a {
+    color: #000;
+    margin: 5px;
+}
+
+.sizeboxes_selected:hover {
+    background-color: rgba(240, 86, 0, .4);
+}
+
+.productspecificimg {
+    padding: 30px;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 60px;   
+}
+
+
+
+.product_specific_btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product_specific_container {
+    margin:auto;
+}
+
+.product_specific_btn_container{
+    display: flex;
+    justify-content: center;
+}
+
+.producttext h2,
+.producttext p {
+    margin: auto;
+    white-space: pre-line;
+}
+
+
+/** About **/
+
+.photo-about img {
+    max-width: 100%; 
+    height: 50%;
+}
+
+.infotext2 {
+    color: #0A3641;
+   font-size: large;
+    padding: 20px;
+    margin: 40px;
+}
+
+.about_text {
+    padding: 0px 250px;
+}
+
+.text_container {
+    padding: 50px 0px 3px;
+}
+
+/** Checkout **/
+
+.checkout_frame_total{
+    display: flex;
+    background-color: #989898;
+    margin: 30px 0px 30px 0px;
+}
+
+/** gjort skjult for å forhindre display-flex i checkout-page 10.03
+/* .customerinfo {
+    display: inline-block;
+} */
+
+.customer_info_form p {
+    margin: 10px;
+}
+
+.checkout_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 60px;
+    width: 50%;
+}
+
+.checkout_product_text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.container_checkout .frame {
+    margin: 40px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form_details_extra {
+    display: flex;
+}
+.form_details_extra div {
+    width: 50%;
+}
+
+.form_box_1 {
+ padding-right: 70px;
+}
+
+.form_box_2 {
+padding-left:70px;
+
+}
+
+.container_checkout > .checkout_size,
+.confirmation_container,
+.confirmation_btn,
+.producttext {
+    margin: auto;
+}
+
+.checkout_size .frame {
+    margin-top: 75px;
+}
+.customer_info_form .btn {
+    margin-top: 50px;
+}
+
+
+@media (max-width: 1000px) {
+    .checkout_information_all {
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+    }
+
+    .container_checkout {
+        margin: auto;
+        flex-direction: column;
+        padding: 8px 0px 0px 30px;
+    }
+
+    .checkout_container,
+    .btn,
+    .cta,
+    .cta_large {
+        padding: 10px;
+    }
+
+    .frame img {
+        margin: auto;
+    }
+
+    .producttext {
+        display: flex;
+    }
+
+}
+
+ /** Shopping bag **/
+
+ .frame3 p {
+    font-size: large;
+    font-weight: bold;
+ }
+
+ .ctatyle {
+    background-color: #000;
+ }
+
+ .ctatyle p {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+ }
+
+ /** Contact page **/
+
+ /** Form fields on contact page and checkout page **/
+ input, 
+ textarea {
+    /** border: none; **/ /** 10.03  border fjernet grunnet ønsket synlighet på inputfelt**/
+    height: 45px;
+    /* margin-bottom: 30px; */
+    margin: auto;
+    background-color: #EAEAEA;
+    width: -webkit-fill-available;
+ }
+
+ textarea {
+    border: 0.2px solid #000;
+    height: 278px;
+ }
+
+ .contact {
+    max-width: 100%;
+    margin: auto;
+ }
+
+ .contact_btn {
+    margin: auto;
+ }
+
+ .contact_btn .cta {
+    justify-content: center;
+ }
+
+ label, .footer-styles, .frame_checkout, frame p {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .contact_form_container {  
+    display: flex;
+    flex-direction: column;
+ }
+
+ .contact_form_container > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+ }
+
+.address-contactpage {
+    margin-right: 180px;
+}
+
+.text-contactpage {
+  padding: 70px 0px 15px;
+}
+
+.contact_content {
+    display: flex;
+}
+
+.contact_info {
+    margin: auto;
+    background-color: #EAEAEA;
+    padding: 50px;
+}
+
+.contact_tel {
+    padding: 0px 0px 15px;
+}
+
+/** Confirmation page **/
+
+.producttext2 h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.confirmation_btn .frame,
+.confirmation_btn .text {
+    text-align: center;
+    font-size: large;
+    margin: 68px;
+}
+
+.product_specific_btn {
+    margin: auto;
+}
+
+.confirmation_container {
+    margin-top: 65px;
+}
+
+
+.confirmation_frame{
+    margin: 50px;
+    padding: 30px 45px;
+    font-size: large;
+    background-color: #EAEAEA;
+}
+
+.confirmation_frame p {
+    margin: 40px;
+}
