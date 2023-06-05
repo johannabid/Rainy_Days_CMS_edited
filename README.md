@@ -1,6 +1,6 @@
 # Rainy Days Project
 
-<img src="https://ibb.co/kyS4csH">
+<img src="/rainydayspic.png">
 
 The Rainy Days project is a clothing store focusing on comfort and durability for a reasonable price. This was our first web-developement project from our the first year at Noroff.
 
