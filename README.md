@@ -36,5 +36,5 @@ Our main goal was to establish respective sites and completing a checkout proces
 
 ## Contact
 
-[Mail](johbid49375@stud.noroff.no)
+Mail: johbid49375@stud.noroff.no
 [My LinkedIn page](https://www.linkedin.com/in/jobi-063354249/)
