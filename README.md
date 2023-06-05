@@ -1,5 +1,7 @@
 # Rainy Days Project
 
+![Rainy Days example picture of site](https://github.com/[johannabid]/[Rainy_Days_CMS_edited]/blob/[branch]/rainydayspic.png?raw=true)
+
 The Rainy Days project is a clothing store focusing on comfort and durability for a reasonable price. This was our first web-developement project from our the first year at Noroff.
 
 ## Description
